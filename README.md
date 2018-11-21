@@ -17,3 +17,8 @@ Copiar y listo! Incluso lo puedes publicar como una Web de GitHub!
 
 Creado por [MrAddon](http://mraddon.com) 2018 @Barcelona. Usando el plugin [Trumbowyg](https://alex-d.github.io/Trumbowyg/) para el campo de edición de Texto Enriquecido HTML WYSWYG.
 
+### Algunas imagenes de la Dapp
+
+![Ejemplo](example1.png)
+![Ejemplo](example2.png)
+![Ejemplo](example3.png)
