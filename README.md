@@ -1,4 +1,4 @@
-[Image](https://elconsejosimpatico.github.io/ElConsejoSimpatico/ElConsejoSimpatico/logo_transp.png)
+![ElConsejoSimpatico](https://elconsejosimpatico.github.io/ElConsejoSimpatico/ElConsejoSimpatico/logo_transp.png)
 
 ## Bienvenido a ElConsejoSimpatico
 
