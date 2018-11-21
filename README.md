@@ -1,3 +1,5 @@
+[Image](https://elconsejosimpatico.github.io/ElConsejoSimpatico/ElConsejoSimpatico/logo_transp.png)
+
 ## Bienvenido a ElConsejoSimpatico
 
 Pruebalo en la siguiente web:
