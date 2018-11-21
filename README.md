@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Bienvenido a ElConsejoSimpatico
 
-You can use the [editor on GitHub](https://github.com/ElConsejoSimpatico/ElConsejoSimpatico/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[https://elconsejosimpatico.github.io/ElConsejoSimpatico/](https://elconsejosimpatico.github.io/ElConsejoSimpatico/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ElConsejoSimpatico.org es algo así como un Twitter totalmente descentralizado, a prueba de cualquier tipo de CENSURA y ataque DDoS (Denegación de Servicio), basado en contratos inteligentes en la blockchain de Ethereum usando solo paginas HTML5 y javascript tipo Web3 para funcionar. Recuerda que debes usar MetaMask en tu navegador, o usar Brave como navegador y conectarte a la Red de test de Rinkeby con una cuenta ya creada que contenga un poquito de "fake" Ether.
 
-### Markdown
+### Haz un fork e instalalo donde quieras
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Publicalo en cualquier webserver (dado que solo usa HTML5 y Javascript para funcionar).
+Copiar y listo! Incluso lo puedes publicar como una Web de GitHub!
 
-```markdown
-Syntax highlighted code block
+### Contacto y otros detalles
 
-# Header 1
-## Header 2
-### Header 3
+Creado por [MrAddon](http://mraddon.com) 2018 @Barcelona. Usando el plugin [Trumbowyg](https://alex-d.github.io/Trumbowyg/) para el campo de edición de Texto Enriquecido HTML WYSWYG.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ElConsejoSimpatico/ElConsejoSimpatico/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
