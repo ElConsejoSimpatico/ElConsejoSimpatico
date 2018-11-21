@@ -19,6 +19,13 @@ Creado por [MrAddon](http://mraddon.com) 2018 @Barcelona. Usando el plugin [Trum
 
 ### Algunas imagenes de la Dapp
 
+Envia contenido enriquecido en forma de Consejo al Ethereum Rinkeby. (Para enviar el consejo se debe pagar un poco de "fake" Ether)
 ![Ejemplo](example1.png)
+
+Lee los consejos de tus amigos. Esos consejos estan guardados en la blockchain de Ethereum Rinkeby
 ![Ejemplo](example2.png)
+
+Un Twitter diferente y sin SPAM, ni anuncios, con un sistema anticensura de alta tecnología, donde lo importante es el Consejo Simpatico que vas a dar a la pequeña Isla llamada Mundo!
 ![Ejemplo](example3.png)
+
+Por MrAddon :)
