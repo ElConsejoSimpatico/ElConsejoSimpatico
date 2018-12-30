@@ -183,10 +183,10 @@ alert(variable);
 } 
     
 $.getJSON("../contacts.txt", function(json) {
-    //console.log(json); 
-    //alert(json);
-    alert("Hola"+json.example1);
-    
+    for (var i=0;i<json.length;i++) {
+            alert(json[i].name);
+            alert(json[i].address);
+    }    
 });
     
 </script>
