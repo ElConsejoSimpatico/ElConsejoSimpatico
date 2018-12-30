@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
                     //document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML +"<b>"+ result[i].address + "</b><br>";
                     document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<b>" +result[i].data + "</b><br>";
                     document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<i>" +web3.toChecksumAddress(result[i].data.substring(0,66)) + "</i><br>";
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + web3.toUtf8(result[i].data.substring(68,result[i].data.length-68)) + "<br><hr><br>";
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + web3.toAscii(result[i].data.substring(68,result[i].data.length-68)) + "<br><hr><br>";
                     i++;
                 }                
             })
