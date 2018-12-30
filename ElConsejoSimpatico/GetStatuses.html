@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
                     document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<br> Viendo estado de amigo <b>" + nicky + "</b>-" + cuenta;
                     eth.contract(abi).at(contract_address).getFriendStatus(cuenta,  { from: address} ).then(function(text) {
                     console.log("Text", text);
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<br><b>Estado</b>: "+ text.text;
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + text.text + "<br><hr><br>";
                     }).catch(function(err) {
                     console.error("problem getting tester", err);
                     });
