@@ -190,7 +190,7 @@ $.getJSON("../contacts.txt", function(json) {
             window.sessionStorage.setItem(json[i].name, json[i].address);
             if (window.sessionStorage.getItem("FriendNicks") == null) {
                 window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
-            } elseif ( window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== -1 ) {
+            } else if ( window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== -1 ) {
                 window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
             }
     }    
