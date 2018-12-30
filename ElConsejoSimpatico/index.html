@@ -188,9 +188,11 @@ $.getJSON("../contacts.txt", function(json) {
             //alert(json[i].name);
             //alert(json[i].address);
             window.sessionStorage.setItem(json[i].name, json[i].address);
-            if (window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== -1) {
+            if (window.sessionStorage.getItem("FriendNicks") == null) {
                 window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
-            } 
+            } elseif ( window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== -1 ) {
+                window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
+            }
     }    
 });
     
