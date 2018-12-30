@@ -181,14 +181,14 @@ function HTML()
 var variable= jQuery("div#editor")[0].innerHTML;
 alert(variable);
 } 
-    
+alert("YEPA");    
 //Loading file of contacts.txt    
 $.getJSON("../contacts.txt", function(json) {
     for (var i=0;i<json.length;i++) {
             //alert(json[i].name);
             //alert(json[i].address);
             window.sessionStorage.setItem(json[i].name, json[i].address);
-            if (window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== 0) {
+            if (window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== -1) {
                 window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
             } 
     }    
