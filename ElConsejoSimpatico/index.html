@@ -143,9 +143,7 @@ window.addEventListener('load', function() {
             alert("Pendiente de hacer (leer los eventos y filtrar los de los amigos)!!");
         }
     
-        $.getJSON("../contacts.txt", function(json) {
-             console.log(json); 
-        });
+        
         
 </script>
 <input type="button" style="height:70px;background-color:black;color:white" value="Agregar direcciones de Eth de amigos" onclick="javascript:add_user()"></input>&nbsp;<input style="height:70px;background-color:black;color:white" type="button" value="Gestionar amigos" onclick="javascript:manage_user()"></input>&nbsp;<input style="height:70px;background-color:black;color:white" type="button" value="Agregar mi direccion MetaMask" onclick="javascript:add_my()"></input>&nbsp;<input style="height:70px;background-color:royalblue;color:white" type="button" value="Historial de consejos" onclick="javascript:historial()"></input><br>
@@ -183,5 +181,11 @@ function HTML()
 var variable= jQuery("div#editor")[0].innerHTML;
 alert(variable);
 } 
+    
+$.getJSON("../contacts.txt", function(json) {
+    console.log(json); 
+    alert(json);
+});
+    
 </script>
 </body></html>
