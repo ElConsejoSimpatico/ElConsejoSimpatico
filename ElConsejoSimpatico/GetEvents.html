@@ -73,7 +73,7 @@ window.addEventListener('load', function() {
             
         }); */
             
-           /*
+           
             const filter = web3.eth.filter({
                 fromBlock: 0,
                 toBlock: 'latest',
@@ -82,11 +82,11 @@ window.addEventListener('load', function() {
              })
 
             filter.watch((error, result) => {
-                document.getElementById("etherlog").innerHTML =result;
+                document.getElementById("etherlog").innerHTML ="result:"+result.toString();
                  //
             })
-            */
             
+            /*
             web3.eth.filter({
                 address: '0x7304b1d58006d1D546500C477390b7a11A4f59Bc',
                 from: 1,
@@ -94,7 +94,7 @@ window.addEventListener('load', function() {
             }).get(function (err, result) {
                 // callback code here
                 document.getElementById("etherlog").innerHTML ="result:" +result;
-            })
+            })*/
         }
         
 </script>
