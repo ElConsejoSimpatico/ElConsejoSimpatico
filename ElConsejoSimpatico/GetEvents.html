@@ -82,8 +82,12 @@ window.addEventListener('load', function() {
              })
 
             filter.get((error, result) => {
-                document.getElementById("etherlog").innerHTML ="result:"+result;
                 console.log(result);
+                var i = 0;
+                while ( i < result.length ) {
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + result[i].address + "<br>";
+                    i++;
+                }                
             })
         }
         
