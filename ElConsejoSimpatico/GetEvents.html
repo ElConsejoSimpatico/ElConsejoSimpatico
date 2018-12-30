@@ -43,7 +43,7 @@ window.addEventListener('load', function() {
         function startApp(web3) {
             //alert("entro");
             
-            web3.eth.getAccounts(function(err, accounts) { 
+          /*  web3.eth.getAccounts(function(err, accounts) { 
                 console.log(accounts); 
                 document.getElementById("etherlog").innerHTML = "Cargando cuentas.. "+ accounts; 
                 address = accounts.toString(); 
@@ -71,7 +71,18 @@ window.addEventListener('load', function() {
                 
                 
             
-        });
+        }); */
+            const filter = web3.eth.filter({
+                fromBlock: 0,
+                toBlock: 'latest',
+                address: '0x7304b1d58006d1D546500C477390b7a11A4f59Bc',
+                topics: [web3.sha3('Log(address,string)')]
+             })
+
+            filter.watch((error, result) => {
+                document.getElementById("etherlog").innerHTML =result;
+                 //
+            })
         }
         
 </script>
