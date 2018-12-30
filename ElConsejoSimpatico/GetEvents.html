@@ -86,7 +86,7 @@ window.addEventListener('load', function() {
                 var i = 0;
                 while ( i < result.length ) {
                     document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + result[i].address + "<br>";
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + result[i].data + "<br>";
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + web3.toAscii(result[i].data) + "<br>";
                     i++;
                 }                
             })
