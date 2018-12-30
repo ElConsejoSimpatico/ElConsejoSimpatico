@@ -85,8 +85,8 @@ window.addEventListener('load', function() {
                 console.log(result);
                 var i = 0;
                 while ( i < result.length ) {
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + result[i].address + "<br>";
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + web3.toAscii(result[i].data) + "<br>";
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML +"<b>"+ result[i].address + "</b><br>";
+                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + web3.toUtf8(result[i].data) + "<br>";
                     i++;
                 }                
             })
