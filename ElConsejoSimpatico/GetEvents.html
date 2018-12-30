@@ -41,43 +41,13 @@ window.addEventListener('load', function() {
         var nicky = "h";
         var cuenta = "h";
         function startApp(web3) {
-            //alert("entro");
-            
-          /*  web3.eth.getAccounts(function(err, accounts) { 
-                console.log(accounts); 
-                document.getElementById("etherlog").innerHTML = "Cargando cuentas.. "+ accounts; 
-                address = accounts.toString(); 
-                document.getElementById("etherlog").innerHTML = "";
-                eth = new Eth(web3.currentProvider);
-                
-                var nicks = window.sessionStorage.getItem("FriendNicks").split("|");
-                var i = 0;                
-                while( i < nicks.length) {
-                    //alert(nicks[i]);
-                    cuenta = window.sessionStorage.getItem(nicks[i]);
-                    nicky=nicks[i];
-                    i++;
-                    if ( nicky != "null") {
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<br> Viendo estado de amigo <b>" + nicky + "</b>-" + cuenta;
-                    eth.contract(abi).at(contract_address).getFriendStatus(cuenta,  { from: address} ).then(function(text) {
-                    console.log("Text", text);
-                    document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<br><b>Estado</b>: "+ text.text;
-                    }).catch(function(err) {
-                    console.error("problem getting tester", err);
-                    });
-                    }
-                }
-                document.getElementById("etherlog").innerHTML = document.getElementById("etherlog").innerHTML + "<br>";
-                
-                
-            
-        }); */
+         
             
            
             const filter = web3.eth.filter({
                 fromBlock: 0,
                 toBlock: 'latest',
-                address: '0x7304b1d58006d1D546500C477390b7a11A4f59Bc',
+                address: contract_address,
                 topics: [web3.sha3('Log(address,string)')]
              })
 
