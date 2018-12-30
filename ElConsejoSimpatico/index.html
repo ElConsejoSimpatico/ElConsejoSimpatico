@@ -182,10 +182,13 @@ var variable= jQuery("div#editor")[0].innerHTML;
 alert(variable);
 } 
     
+//Loading file of contacts.txt    
 $.getJSON("../contacts.txt", function(json) {
     for (var i=0;i<json.length;i++) {
-            alert(json[i].name);
-            alert(json[i].address);
+            //alert(json[i].name);
+            //alert(json[i].address);
+            window.sessionStorage.setItem(json[i].name, json[i].address);
+            window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
     }    
 });
     
