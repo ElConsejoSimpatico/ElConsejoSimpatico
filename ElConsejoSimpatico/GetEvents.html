@@ -81,20 +81,10 @@ window.addEventListener('load', function() {
                 topics: [web3.sha3('Log(address,string)')]
              })
 
-            filter.watch((error, result) => {
-                document.getElementById("etherlog").innerHTML ="result:"+result.toString();
-                 //
+            filter.get((error, result) => {
+                document.getElementById("etherlog").innerHTML ="result:"+result;
+                console.log(result);
             })
-            
-            /*
-            web3.eth.filter({
-                address: '0x7304b1d58006d1D546500C477390b7a11A4f59Bc',
-                from: 1,
-                to: 'latest'
-            }).get(function (err, result) {
-                // callback code here
-                document.getElementById("etherlog").innerHTML ="result:" +result;
-            })*/
         }
         
 </script>
