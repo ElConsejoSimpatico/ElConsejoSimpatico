@@ -188,7 +188,7 @@ $.getJSON("../contacts.txt", function(json) {
             //alert(json[i].name);
             //alert(json[i].address);
             window.sessionStorage.setItem(json[i].name, json[i].address);
-            if (window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")!= 0) {
+            if (window.sessionStorage.getItem("FriendNicks").indexOf(json[i].name+"|")=== 0) {
                 window.sessionStorage.setItem("FriendNicks", json[i].name+"|"+window.sessionStorage.getItem("FriendNicks"));
             } 
     }    
